@@ -18,6 +18,11 @@ public class AppTest
     {
         assertEquals(Calculadora.sumar(5,5), 10);
     }
-
+    @Test
+    public void integracionSumarRestar(){
+        int resulRest = Calculadora.restar(5, 1);
+        assertEquals(Calculadora.sumar(resulRest,4),8);
+    }
+    
 
 }

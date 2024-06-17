@@ -16,12 +16,23 @@ public class AppTest
      * Rigorous Test :-)
      */
     @Test
-    public void testMultiplicacion()
+    public void testMultiplicar()
     {
         int num01 = 2;
         int num02 = 6;
 
         int esperado = 12;
+        int resultado = Calculadora.multiplicar(num01, num02);
+        assertEquals(esperado, resultado);
+    }
+
+    @Test
+    public void integracionSumarRestarMultiplicar()
+    {
+        int num01 = Calculadora.sumar(8, 2);
+        int num02 = Calculadora.restar(4, 1);
+
+        int esperado = 30;
         int resultado = Calculadora.multiplicar(num01, num02);
         assertEquals(esperado, resultado);
     }

@@ -23,10 +23,25 @@ public class StepDefinitions {
     }
 
     @Then("el resultado debe ser {int}")
-    public void el_resultado_debe_ser(int esperado) {
+    public void resultado_debe_ser(int esperado) {
         assertEquals(esperado, result);
     }
 
+    @Given("que tengo dos números {int} y {int}")
+    public void tengo_Dos_numeros_y(int a, int b) {
+        this.a = a;
+        this.b = b;
+    }
+
+    @When("los resto")
+    public void los_resto() {
+        result = Calculadora.restar(a, b);
+    }
+
+    @Then("el resultado debe ser {int}")
+    public void el_resultado_debe_ser(int esperado) {
+        assertEquals(esperado, result);
+    }
 
     @Given("tengo dos números {int} y {int}")
     public void tengo_dos_numeros_y(int a, int b) {

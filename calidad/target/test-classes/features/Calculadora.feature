@@ -5,7 +5,7 @@ Feature: Pruebas de la Calculadora
     When los sumo
     Then el resultado debe ser 8
   
-  Scenario: Multipicar dos números
+  Scenario: Multiplicar dos números
     Given tengo dos números 6 y 3
     When los multiplico
     Then el resultado es igual a 18

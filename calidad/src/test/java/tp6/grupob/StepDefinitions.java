@@ -26,4 +26,21 @@ public class StepDefinitions {
     public void el_resultado_debe_ser(int esperado) {
         assertEquals(esperado, result);
     }
+
+
+    @Given("tengo dos números {int} y {int}")
+    public void tengo_dos_numeros_y(int a, int b) {
+        this.a = a;
+        this.b = b;
+    }
+
+    @When("los multiplico")
+    public void los_multiplico() {
+        result = Calculadora.multiplicar(a, b);
+    }
+
+    @Then("el resultado es igual a {int}")
+    public void el_resultado_es_igual_a(int esperado) {
+        assertEquals(esperado, result);
+    }
 }

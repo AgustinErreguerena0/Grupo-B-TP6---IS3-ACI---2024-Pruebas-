@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
-Test set: tp6.grupob.AppTest
+Test set: tp6.grupob.TestRunner
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.091 s - in tp6.grupob.AppTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.673 s - in tp6.grupob.TestRunner

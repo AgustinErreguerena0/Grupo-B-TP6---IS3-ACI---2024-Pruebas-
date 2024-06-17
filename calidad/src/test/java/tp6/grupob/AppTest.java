@@ -16,13 +16,14 @@ public class AppTest
     @Test
     public void unitariaSumar()
     {
-        assertEquals(Calculadora.sumar(5,5), 10);
+        assertEquals(10,Calculadora.sumar(5,5));
     }
     @Test
     public void integracionSumarRestar(){
         int resulRest = Calculadora.restar(5, 1);
-        assertEquals(Calculadora.sumar(resulRest,4),8);
+        assertEquals(8,Calculadora.sumar(resulRest,4));
     }
+    
     
 
 }

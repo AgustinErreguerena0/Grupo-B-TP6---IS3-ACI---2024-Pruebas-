@@ -10,7 +10,7 @@ public class StepDefinitions {
     private int a;
     private int b;
     private int result;
-
+// Step definition suma
     @Given("que tengo dos números {int} y {int}")
     public void que_tengo_dos_numeros_y(int a, int b) {
         this.a = a;
@@ -26,7 +26,7 @@ public class StepDefinitions {
     public void resultado_debe_ser(int esperado) {
         assertEquals(esperado, result);
     }
-
+// Step definition resta
     @Given("que tengo dos números {int} y {int}")
     public void tengo_Dos_numeros_y(int a, int b) {
         this.a = a;
@@ -42,7 +42,7 @@ public class StepDefinitions {
     public void el_resultado_debe_ser(int esperado) {
         assertEquals(esperado, result);
     }
-
+// Step definition multiplicacion
     @Given("tengo dos números {int} y {int}")
     public void tengo_dos_numeros_y(int a, int b) {
         this.a = a;
